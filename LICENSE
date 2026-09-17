@@ -1,40 +1,21 @@
-# SaS Integrated IoT Architecture Frame
+MIT License
 
-Framework for at-source IoT data processing, Agentic AI scanning, and Cloud AI analysis.
+Copyright (c) 2026 observe-sys
 
-This repo is an **architecture frame**, not a finished product. Fork it, keep the pipeline, change adapters and domain.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Tax and business operations are included only as an example.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-## Status and license
-Architecture materials in this repository are released under the [MIT License](LICENSE).
-
-A related Provisional Patent Application (PPA) has been filed with the USPTO. The MIT license covers this public description and template. It does not mean the work is public domain.
-
-## Pipeline
-1. **Sort & Structure (Edge 6S)**  
-   Clean and schema raw IoT/source data at the edge. Do not forward noise.
-
-2. **Sync & Scan (Agentic AI)**  
-   Sync structured events to agents that scan for anomalies and compliance drift in near real time.
-
-3. **Sanitize & Standardize (Cloud AI)**  
-   Send only high-integrity data to Cloud AI for heavier analysis and forecasting.
-
-4. **Sustain**  
-   Close the loop: push rules, policies, or actions back to operations/edge.
-
-Dependency direction: `Edge → Agentic AI → Cloud AI`. Cloud must not ingest raw feeds.
-
-## What is fixed vs remixable
-Keep: the 4 stages and one-way dependency.  
-Change: source adapters, agent rules, cloud models, and industry example.
-
-## Example: tax and operations
-Agents monitor sales/cash-flow events, sanitize records toward filing rules, and flag liquidity or compliance risk. This example is optional.
-
-## Use
-1. Fork the repo
-2. Copy `TEMPLATE/`
-3. Replace the example domain
-4. Keep the pipeline and license notice
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
